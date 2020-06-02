@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTDXHTML1.0Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+		<meta name="robots" content="INDEX,FOLLOW" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<title>{{ code }} - {{ message }}</title>
+
+		<link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}">
+		<link rel="canonical" href="{{ path('helpdesk_knowledgebase') }}">
+		<link href="https://cdn.uvdesk.com/uvdesk/css/main.css" type="text/css" rel="stylesheet" media="all" />
+
+		<style>
+			.error-dialog {
+				padding: 25px;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			.error-dialog h1 {
+				color: #6F6F6F;
+				font-size: 21px;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin: unset;
+				line-height: 1.4em;
+			}
+
+			.section-separator {
+				width: 50px;
+				border: 1px solid #6F6F6F;
+				margin: 14px 0px 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="error-dialog">
+			<h1>Error {{ code }}</h1>
+			<div class="section-separator"></div>
+			<p style="margin: unset; font-size: 16px; line-height: 1.4em">{{ description }}</p>
+		</div>
+	</body>
+</html>
