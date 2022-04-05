@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab9f60feb625de3b1de51dd95b736071",
+    "content-hash": "fd8d1b3e180351ce8ed9c668ff9314fc",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -643,6 +643,7 @@
                 "cache",
                 "caching"
             ],
+            "abandoned": true,
             "time": "2018-11-09T06:25:35+00:00"
         },
         {
@@ -1359,6 +1360,7 @@
             "keywords": [
                 "reflection"
             ],
+            "abandoned": "roave/better-reflection",
             "time": "2018-06-14T14:45:07+00:00"
         },
         {
@@ -3916,6 +3918,7 @@
                 "symfony",
                 "words"
             ],
+            "abandoned": "use `EnglishInflector` from the String component instead",
             "time": "2019-11-05T19:58:22+00:00"
         },
         {
@@ -6180,6 +6183,47 @@
             "time": "2019-11-11T16:52:09+00:00"
         },
         {
+            "name": "uvdesk/api-bundle",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uvdesk/api-bundle.git",
+                "reference": "df19f22b3a8acc88adb3672f8d31704ec1c35f05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uvdesk/api-bundle/zipball/df19f22b3a8acc88adb3672f8d31704ec1c35f05",
+                "reference": "df19f22b3a8acc88adb3672f8d31704ec1c35f05",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "uvdesk/composer-plugin": "^1.0",
+                "uvdesk/core-framework": "^1.0.4"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "uvdesk-package-extension": "Webkul\\UVDesk\\ApiBundle\\Package\\PackageConfiguration"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webkul\\UVDesk\\ApiBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Akshay Kumar",
+                    "email": "akshay.kumar758@webkul.com"
+                }
+            ],
+            "description": "Easily integrate with your community helpdesk system using the uvdesk api bundle.",
+            "time": "2021-03-03T13:49:15+00:00"
+        },
+        {
             "name": "uvdesk/automation-bundle",
             "version": "v1.0.7",
             "source": {
@@ -6442,12 +6486,12 @@
             "version": "1.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "88e6d84706d09a236046d686bbea96f07b3a34f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/88e6d84706d09a236046d686bbea96f07b3a34f4",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/88e6d84706d09a236046d686bbea96f07b3a34f4",
                 "reference": "88e6d84706d09a236046d686bbea96f07b3a34f4",
                 "shasum": ""
             },
@@ -7295,5 +7339,6 @@
         "ext-ctype": "*",
         "ext-iconv": "*"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

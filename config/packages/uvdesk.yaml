@@ -1,6 +1,6 @@
 parameters:
-    app_locales: en|fr|it
-    
+    app_locales: es|en|fr|it
+
     # Default Assets
     assets_default_agent_profile_image_path: 'bundles/uvdeskcoreframework/images/uv-avatar-batman.png'
     assets_default_customer_profile_image_path: 'bundles/uvdeskcoreframework/images/uv-avatar-ironman.png'
@@ -16,12 +16,15 @@ parameters:
     upload_max_filesize: 2097152
 
 uvdesk:
-    site_url: 'localhost:8000'
+    site_url: 'soporte.data.org.uy'
     upload_manager:
         id: Webkul\UVDesk\CoreFrameworkBundle\FileSystem\UploadManagers\Localhost
-    
-    support_email: ~
-    
+
+    support_email:
+        id: soporte@data.org.uy
+        name: Soporte DATA
+        mailer_id: mailer_9388
+
     # Default resources
     default:
         ticket:

@@ -520,6 +520,9 @@
     "twig/twig": {
         "version": "v2.12.2"
     },
+    "uvdesk/api-bundle": {
+        "version": "v1.0.3"
+    },
     "uvdesk/automation-bundle": {
         "version": "v1.0.7"
     },
